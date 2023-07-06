@@ -32,8 +32,8 @@ const Counter = ({initialCount}: CounterProps) => {
     const [count, setCount] = useState<number>(initialCount);
     return (
         <CounterWrapper>
-            <div>{count}</div>
-            <Button type="button" onClick={() => setCount(count + 1)}>+</Button>
+            <div id="currentCount">{count}</div>
+            <Button id="incrementButton" type="button" onClick={() => setCount(count + 1)}>+</Button>
         </CounterWrapper>
     );
 };
