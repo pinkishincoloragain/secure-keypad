@@ -1,6 +1,6 @@
 import normalize from 'emotion-normalize';
 import styled from "@emotion/styled";
-import {Global, css, useTheme, ThemeProvider} from '@emotion/react';
+import {Global, css} from '@emotion/react';
 import KeyboardTemplate from "./components/keyboard/KeyboardTemplate";
 
 
@@ -11,7 +11,6 @@ const AppWrapper = styled.div`
   align-items: center;
 `;
 export default function App() {
-    const theme = useTheme();
     return (
         <>
             <Global
