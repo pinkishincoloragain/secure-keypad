@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "eslintConfig": {
     "extends": [
