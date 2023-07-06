@@ -1,0 +1,95 @@
+{
+  "data": [
+    {
+      "name": "정대규",
+      "bankName": "국민",
+      "bankAccount": "123456789012",
+      "phoneNumber": "010-1529-1582"
+    },
+    {
+      "name": "김동규",
+      "bankName": "신한",
+      "bankAccount": "234567890123",
+      "phoneNumber": "010-1234-5678"
+    },
+    {
+      "name": "손명빈",
+      "bankName": "하나",
+      "bankAccount": "345678901234",
+      "phoneNumber": "010-9876-5432"
+    },
+    {
+      "name": "고재철",
+      "bankName": "카카오",
+      "bankAccount": "456789012345",
+      "phoneNumber": "010-1111-2222"
+    },
+    {
+      "name": "이영희",
+      "bankName": "토스",
+      "bankAccount": "567890123456",
+      "phoneNumber": "010-2222-3333"
+    },
+    {
+      "name": "홍길동",
+      "bankName": "농협",
+      "bankAccount": "678901234567",
+      "phoneNumber": "010-3333-4444"
+    },
+    {
+      "name": "박철수",
+      "bankName": "국민",
+      "bankAccount": "789012345678",
+      "phoneNumber": "010-4444-5555"
+    },
+    {
+      "name": "김영수",
+      "bankName": "신한",
+      "bankAccount": "890123456789",
+      "phoneNumber": "010-5555-6666"
+    },
+    {
+      "name": "이미나",
+      "bankName": "하나",
+      "bankAccount": "901234567890",
+      "phoneNumber": "010-6666-7777"
+    },
+    {
+      "name": "장승민",
+      "bankName": "카카오",
+      "bankAccount": "012345678901",
+      "phoneNumber": "010-7777-8888"
+    },
+    {
+      "name": "김지영",
+      "bankName": "토스",
+      "bankAccount": "123456789012",
+      "phoneNumber": "010-8888-9999"
+    },
+    {
+      "name": "윤진호",
+      "bankName": "농협",
+      "bankAccount": "234567890123",
+      "phoneNumber": "010-9999-0000"
+    },
+    {
+      "name": "이상민",
+      "bankName": "국민",
+      "bankAccount": "345678901234",
+      "phoneNumber": "010-0000-1111"
+    },
+    {
+      "name": "김현우",
+      "bankName": "신한",
+      "bankAccount": "456789012345",
+      "phoneNumber": "010-1111-2222"
+    },
+    {
+      "name": "박은정",
+      "bankName": "하나",
+      "bankAccount": "567890123456",
+      "phoneNumber": "010-2222-3333"
+    }
+  ]
+  ;
+}
