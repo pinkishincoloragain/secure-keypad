@@ -1,7 +1,7 @@
 import normalize from 'emotion-normalize';
-import {Global, css} from '@emotion/react';
-import Counter from "./components/Counter";
 import styled from "@emotion/styled";
+import {Global, css, useTheme, ThemeProvider} from '@emotion/react';
+import KeyboardTemplate from "./components/keyboard/KeyboardTemplate";
 
 
 const AppWrapper = styled.div`
@@ -11,6 +11,7 @@ const AppWrapper = styled.div`
   align-items: center;
 `;
 export default function App() {
+    const theme = useTheme();
     return (
         <>
             <Global
@@ -24,9 +25,7 @@ export default function App() {
                 `}
             />
             <AppWrapper>
-                <Counter initialCount={10}/>
-                <p>Hello, Kingdonggyu!</p>
-                {/*New Components here*/}
+                <KeyboardTemplate/>
             </AppWrapper>
         </>
     );
