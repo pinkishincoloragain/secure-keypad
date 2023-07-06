@@ -8,12 +8,18 @@ interface PasswordProps {
 
 const Password = ({ inputCount }: PasswordProps) => (
   <PasswordWrapper>
-    {Array.from({ length: PASSWORD_SIZE }, (_, i) => (
-      <Fragment key={i}>
-        {i === PASSWORD_SIZE - 1 && <PlusIcon>﹢</PlusIcon>}
-        <PasswordCircle isActive={i < inputCount} />
-      </Fragment>
-    ))}
+    {Array.from({ length: PASSWORD_SIZE }, (_, i) => {
+      const isActive = i < inputCount;
+      return (
+        <Fragment key={i}>
+          {i === PASSWORD_SIZE - 1 && <PlusIcon>﹢</PlusIcon>}
+          <PasswordCircle
+            isActive={isActive}
+            data-testid={isActive ? 'password-active' : 'password-deactive'}
+          />
+        </Fragment>
+      );
+    })}
   </PasswordWrapper>
 );
 

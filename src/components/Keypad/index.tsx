@@ -31,7 +31,11 @@ const Keypad = ({
           {key}
         </KeyButton>
       ))}
-      {isShowDeleteButton && <KeyButton onClick={onClickDelete}>←</KeyButton>}
+      {isShowDeleteButton && (
+        <KeyButton onClick={onClickDelete} data-testid='keypad-delete-button'>
+          ←
+        </KeyButton>
+      )}
     </KeypadWrapper>
   );
 };
