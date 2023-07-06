@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import styled from '@emotion/styled';
 import StyleProps from 'types/style';
 import { KeypadType } from 'constants/keypad';
@@ -22,11 +22,7 @@ const Keypad = ({
   const numbers = useMemo(() => getSuffledNumbers(), []);
   const alphabets = useMemo(() => getSuffledAlphabets(), []);
 
-  const [keys, setKeys] = useState<string[]>([]);
-
-  useEffect(() => {
-    setKeys(type === KeypadType.number ? numbers : alphabets);
-  }, [alphabets, numbers, type]);
+  const keys = type === KeypadType.number ? numbers : alphabets;
 
   return (
     <KeypadWrapper type={type} {...styleProps}>
@@ -51,10 +47,17 @@ const KeypadWrapper = styled.div<{ type: KeypadType }>`
 
 const KeyButton = styled.button`
   cursor: pointer;
+  margin: auto;
   width: 10rem;
   height: 7rem;
   font-size: 3rem;
   color: black;
   background: none;
   border: none;
+
+  @media screen and (max-width: 480px) {
+    width: 3rem;
+    height: 6rem;
+    font-size: 2rem;
+  }
 `;
