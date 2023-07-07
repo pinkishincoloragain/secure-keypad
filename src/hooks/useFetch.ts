@@ -1,5 +1,4 @@
 import {USER_API_ENDPOINT, USER_API_ENDPOINT_SLOW, USERS_API_ENDPOINT, USERS_API_ENDPOINT_SLOW} from "../constants/api";
-import axios from "axios";
 import {User, Users} from "../types/user";
 import {useEffect, useState} from "react";
 import fetchData from "../utils/fetchData";
@@ -10,7 +9,7 @@ export const useFetchAllUsers = () => {
     const [isError, setIsError] = useState<boolean>(false);
 
     useEffect(() => {
-        fetchData(USERS_API_ENDPOINT_SLOW, setIsLoading, setIsError, setData);
+        fetchData(USERS_API_ENDPOINT, setIsLoading, setIsError, setData);
     }, [setIsLoading, setIsError, setData]);
 
     return {data, isError, isLoading};

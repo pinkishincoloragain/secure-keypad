@@ -1,8 +1,9 @@
 import normalize from 'emotion-normalize';
 import styled from "@emotion/styled";
-import {Global, css} from '@emotion/react';
+import {Global, css, ThemeProvider} from '@emotion/react';
 import KeyboardTemplate from "./components/keyboard/KeyboardTemplate";
 import TableWithHook from "./components/table/TableWithHook";
+import Inputs from "./components/inputs/Inputs";
 
 
 const AppWrapper = styled.div`
@@ -25,6 +26,7 @@ export default function App() {
                 `}
             />
             <AppWrapper>
+                <Inputs/>
                 <TableWithHook/>
                 <KeyboardTemplate/>
             </AppWrapper>
