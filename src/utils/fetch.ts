@@ -1,7 +1,7 @@
 import {USER_API_ENDPOINT, USERS_API_ENDPOINT} from "../constants/api";
 import axios from "axios";
 
-const fetchAllUsers = async () => {
+export const fetchAllUsers = async () => {
     const response = await axios.get(USERS_API_ENDPOINT);
 
     if (response.status !== 200) {
@@ -21,5 +21,3 @@ export const fetchUser = async (id: string) => {
     }
 
 }
-
-export default fetchAllUsers;
